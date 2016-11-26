@@ -13,7 +13,7 @@ app.get('/api/', function (req, res, next) {
     next();
 });
 
-app.get("/api/", function (req, res) {
+app.get("/api/", function (req, res) {ß
     console.log(req.address);
     res.send(req.param("name"));
 });
@@ -25,7 +25,7 @@ app.get("/api/1", function (req, res) {
 
 app.get("/", function (req, res) {
     console.log(req.body);
-    res.send("test0");
+    res.send("Service is available!");
 });
 
 app.listen(port, function () {
