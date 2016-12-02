@@ -13,7 +13,7 @@ app.get('/api/', function (req, res, next) {
     next();
 });
 
-app.get("/api/", function (req, res) {ß
+app.get("/api/", function (req, res) {
     console.log(req.address);
     res.send(req.param("name"));
 });
